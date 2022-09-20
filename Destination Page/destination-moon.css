@@ -1,0 +1,306 @@
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 30px 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 670px;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 40px;
+    padding: 20px 0px;
+}
+nav ul li:nth-child(2){
+    border-bottom: 2px solid white;
+}
+nav ul li:hover{
+    border-bottom: 2px solid hsla(231, 76%, 90%, 0.6);
+}
+nav ul li a{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    color: hsl(231, 77%, 90%);
+    font-size: .9em;
+    letter-spacing: 1px;
+}
+.nav-numbers{
+    color: white;
+    margin-right: 4px;
+}
+.logo{
+    width: 35px;
+    height: 35px;
+}
+main{
+    width: 85%;
+    margin: 40px auto;
+}
+main > h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    letter-spacing: 4.75px;
+    color: hsl(231, 77%, 90%);
+    font-weight: 500;
+}
+main > h2 span{
+    color: rgb(44, 44, 44);
+    font-weight: 700;
+    margin-right: 5px;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 35px;
+}
+.main-container img{
+    align-self: center;
+    width: 40%;
+    height: 100%;
+}
+.text{
+    width: 400px;
+}
+.text h1{
+    font-size: 100px;
+    font-family: 'Bellefair', serif;
+    color: white;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+.text > p{
+    color: hsl(231, 77%, 90%);
+    font-weight: 100;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1em;
+    line-height: 25px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.btns button{
+    border: none;
+    background-color: transparent;
+    color: hsl(231, 77%, 90%);
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.btns button:first-child{
+    color: white;
+    border-bottom: 2px solid white;
+}
+.btns button:hover{
+    border-bottom: 2px solid hsla(231, 76%, 90%, 0.6) !important;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid hsla(231, 76%, 90%, 0.3);
+    margin-top: 35px;
+    padding-top: 20px;
+}
+.travel-time{
+    margin-right: 50px;
+}
+.details p{
+    color: hsl(231, 77%, 90%);
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.35px;
+    font-size: 14px;
+}
+.details h2{
+    color: white;
+    font-weight: 100;
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width:845px){
+    body{
+        background-image: url(./images/background-destination-tablet.jpg);
+        background-size: cover;
+        margin: 5px;
+        overflow-y: scroll;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul{
+        width: 400px;
+    }
+    main{
+        width: 86%;
+        margin: 30px auto 0px;
+    }
+
+    main > h2 span{
+        color: rgb(39, 39, 39);
+    }
+    .main-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .main-container img{
+        width: 80%;
+        margin-top: 30px;
+    }
+    .text{
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 90px;
+        margin: 10px 0px;
+    }
+    .text > p{
+        font-size: 1.2em;
+    }
+    .btns{
+        margin: 30px auto;
+    }
+    .details{
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .details div{
+        margin: 0px 27px;
+    }
+    .travel-time{
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width:475px){
+    body{
+        background-image: url(./images/background-destination-mobile.jpg);
+        background-size: cover;
+        margin: 0px;
+        overflow-y: scroll;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+    nav ul{
+        width: 300px;
+        height: 100vh;
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        right: -800px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        -webkit-backdrop-filter: blur(50px);
+        -moz-backdrop-filter: blur(50px);
+        -o-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+        padding: 90px 0px 0px 40px;
+        transition: all 1s ease;
+    }
+    .show{
+        right: 0px;
+    }
+    nav ul li{
+        display: block;
+        margin-left: 0px;
+        padding: 0px;
+        padding-bottom: 5px;
+        margin: 15px 0px;
+    }
+    nav ul li a{
+        font-size: 1.4em;
+        letter-spacing: 4px;
+        font-weight: 100;
+    }
+    .menu-btn{
+        z-index: 3;
+    }
+    main{
+        width: 95%;
+        margin: 30px auto 0px;
+    }
+    main > h2{
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    main > h2 span{
+        color: rgb(39, 39, 39);
+    }
+    .main-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .main-container img{
+        width: 80%;
+        margin-top: 30px;
+    }
+    .text{
+        margin: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 60px;
+        margin: 10px 0px;
+    }
+    .text > p{
+        font-size: 1.2em;
+    }
+    .btns{
+        margin: 30px auto;
+        width: 80%;
+    }
+    .details{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    .details div{
+        margin: 15px 0px;
+    }
+    .travel-time{
+        margin-right: 0px;
+    }
+}
